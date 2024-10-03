@@ -34,6 +34,34 @@ const myFunction = function () {
     console.log("hello world");
 }
 
-console.log(typeof anotherId);
+//console.log(typeof anotherId);
 
 //https://262.ecma-international.org/5.1/#sec-11.4.3
+
+// ++++++++++++++++ Momory +++++++++++++++++++++++++
+//    There are two types of menory:
+//    1)Stack(it is used in 'Primitive')    2)Heap(it is used in 'Non-Primitive) 
+//  "we will get the copy of the variable"  "we will get the reference of the original value"
+
+let myYoutubename = "Abdulmoeedkhan"
+
+let anothername = myYoutubename
+anothername = "code with moeed"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+   email: "usergoogle.com",
+   banking: "user@banking",
+}
+
+let userTwo = userOne
+
+userTwo.email = "moeed@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
